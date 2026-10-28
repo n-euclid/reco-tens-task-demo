@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+  resources:
+    - assets/outcomes-dashboard.css
+    - assets/outcomes-dashboard.js
+    - assets/tens-task-items.js
+    - .nojekyll
+website:
+  title: "ReCo | TENS-Task"
+format:
+  html:
+    theme: none
+    template: templates/reading-room.html
+    toc: false
+    section-divs: true
+    anchor-sections: false
+    smooth-scroll: false
+    html-math-method: plain
+    link-color: "#1554bb"
+    css:
+      - assets/outcomes-dashboard.css
+lang: en-GB
+asset-version: "20261028-public-demo"

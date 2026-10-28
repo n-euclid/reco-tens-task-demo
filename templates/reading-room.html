@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="$lang$">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<title>$pagetitle$</title>
+$for(css)$
+<link rel="stylesheet" href="$css$?v=$asset-version$">
+$endfor$
+$for(header-includes)$
+$header-includes$
+$endfor$
+<script src="assets/tens-task-items.js?v=$asset-version$" defer></script>
+<script src="assets/outcomes-dashboard.js?v=$asset-version$" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#outcomes">Skip to dashboard</a>
+<main id="dashboard-main">$body$</main>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

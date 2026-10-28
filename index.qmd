@@ -1,0 +1,33 @@
+---
+title: "ReCo | TENS-Task"
+---
+
+```{=html}
+<section id="outcomes" class="dashboard" aria-labelledby="dashboard-title">
+  <header class="dashboard-header">
+    <div class="dashboard-brand"><span class="project-name">ReCo</span><h1 id="dashboard-title">TENS-Task</h1></div>
+    <span class="data-key">No answers entered</span>
+  </header>
+  <div class="view-tabs" role="tablist" aria-label="Dashboard view">
+    <button id="user-tab" type="button" role="tab" aria-selected="true" aria-controls="user-panel">By user</button>
+    <button id="cohort-tab" type="button" role="tab" aria-selected="false" aria-controls="cohort-panel" tabindex="-1">Across users</button>
+  </div>
+  <div id="user-panel" role="tabpanel" aria-labelledby="user-tab">
+    <div id="user-selector" class="user-selector" role="group" aria-label="Select user"></div>
+    <div class="chart-toolbar">
+      <h2 id="selected-user" aria-live="polite">User 1</h2>
+      <div class="chart-key"><span id="score-hint">Drag to score · Click to read</span><button id="restore-previous-responses" type="button" class="reset-labels" hidden>Restore previous scores</button><button id="undo-response" type="button" class="reset-labels" disabled>Undo</button></div>
+    </div>
+    <div id="user-charts" class="need-stack"></div>
+  </div>
+  <div id="cohort-panel" role="tabpanel" aria-labelledby="cohort-tab" hidden>
+    <div class="cohort-controls">
+      <div class="measure-control"><label for="subscale-select">Measure</label><select id="subscale-select"></select></div>
+      <div class="chart-key"><span>Mean score · 1–7</span><span class="week-key"><i class="marker week-four" aria-hidden="true"></i>Week 4</span><span class="week-key"><i class="marker week-eight" aria-hidden="true"></i>Week 8</span></div>
+    </div>
+    <div class="cohort-plot"><div id="cohort-chart"></div></div>
+    <div id="cohort-score-table" class="score-table-wrap"></div>
+  </div>
+  <noscript>Enable JavaScript to use the dashboard.</noscript>
+</section>
+```

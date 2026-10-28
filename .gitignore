@@ -1,0 +1,10 @@
+.DS_Store
+.quarto/
+_site/
+docs/search.json
+*.log
+.env
+.env.*
+
+/.quarto/
+**/*.quarto_ipynb
